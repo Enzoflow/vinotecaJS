@@ -37,12 +37,12 @@ function ComprobarLocal(v){
     if(v=="negro"){
         cuerpo.classList.toggle('dark-mode');
         cuerpo.classList.contains("dark-mode");
-        botonCambiarFondo.style.backgroundImage="url(/medios/icons/luna.png)";
+        botonCambiarFondo.style.backgroundImage="url(./medios/icons/luna.png)";
         valorB="negro";
         localStorage.setItem(0, valorB);
     }else if(v=="blanco"){
         cuerpo.classList.remove("dark-mode");
-        botonCambiarFondo.style.backgroundImage="url(/medios/icons/sun.png)";
+        botonCambiarFondo.style.backgroundImage="url(./medios/icons/sun.png)";
         valorB="blanco";
         localStorage.setItem(0, valorB);
     }else{
@@ -55,12 +55,12 @@ botonCambiarFondo.addEventListener("click", ()=>{
     if(valorB=="blanco"){
         cuerpo.classList.toggle('dark-mode');
         cuerpo.classList.contains("dark-mode");
-        botonCambiarFondo.style.backgroundImage="url(/medios/icons/luna.png)";
+        botonCambiarFondo.style.backgroundImage="url(./medios/icons/luna.png)";
         valorB="negro";
         localStorage.setItem(0, valorB);
     }else{
         cuerpo.classList.remove('dark-mode');
-        botonCambiarFondo.style.backgroundImage="url(/medios/icons/sun.png)";
+        botonCambiarFondo.style.backgroundImage="url(./medios/icons/sun.png)";
         valorB="blanco";
         localStorage.setItem(0, valorB);
     }
