@@ -199,7 +199,6 @@ divCards.appendChild(iconDiv1);
 divCards2.appendChild(iconDiv2);
 divCards3.appendChild(iconDiv3);
 divCards4.appendChild(iconDiv4);
-console.log(seccionVinos);
 seccionVinos.appendChild(h3Final);
 seccionVinos.appendChild(divEnlaceProductos);
 setInterval(()=>{
@@ -241,7 +240,6 @@ setInterval(()=>{
 }, 10000);
 
 const hijo=divEnlaceProductos.childNodes[3];
-console.log(hijo);
 hijo.addEventListener("mouseover", ()=>{
     hijo.className=("clickProductos animate__animated animate__zoomIn");
     setTimeout(()=>{
