@@ -1,0 +1,625 @@
+.dark-mode{
+    background-color: black;
+    color: white;
+    header{
+        nav{
+            div{
+                ul{
+                    li{
+                        a{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        section{
+
+            div{
+                color: white;
+            }
+        }
+        .cards{
+            display: block;
+            width: 30%;
+            padding: 2rem;
+            background-color: grey;
+            margin-top: 15rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            border: solid  0.5rem;
+            border-radius: 1rem;
+       }
+        .sectionVinos{
+            color: white;
+            h2{
+                color: white !important;
+            }
+            h3{
+                color: white !important;
+            }
+            .divEnlace{
+                .clickProductos{
+                    color: white;
+                }
+            }
+        }
+        .padrePro{
+            .estiloPro{
+                .infoProductos{
+                    background-color: black;
+                }
+            }
+        }
+    }
+    footer{
+        background-color: black !important;
+        p{
+            color: white !important;
+        }
+    }
+}
+body{
+    header{
+        button{
+            background-repeat: no-repeat;
+            background-position: center;
+            --color: gray;
+            font-family: inherit;
+            display: inline-block;
+            width: 3rem;
+            height: 2.6em;
+            line-height: 2.5em;
+            overflow: hidden;
+            cursor: pointer;
+            margin-right: 1rem;
+            font-size: 18px;
+            z-index: 1;
+            color: var(--color);
+            border: 2px solid var(--color);
+            border-radius: 12px;
+            position: relative;
+          
+            &::before {
+              position: absolute;
+              content: "";
+              width: 150px;
+              height: 200px;
+              z-index: -1;
+              border-radius: 50%;
+              top: 100%;
+              left: 100%;
+              transition: 0.3s all;
+            }
+          
+            &:hover {
+              color: white;
+              background-repeat: no-repeat;
+              &::before {
+                top: -30px;
+                left: -30px;
+                
+              }
+            }
+          }
+          
+        nav{
+            div{
+                ul{
+                    li{
+                        .nav-link{
+                            width: 100%;
+                            text-align: center !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        section{
+            .divBotonFinalizar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .buttonF{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px 15px;
+                    gap: 15px;
+                    background-color: #181717;
+                    outline: 3px #181717 solid;
+                    outline-offset: -3px;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: 400ms;
+                    flex-direction: row-reverse;
+                    .text {
+                      color: white;
+                      font-weight: 700;
+                      font-size: 1em;
+                      transition: 400ms;
+                      margin-top: 1rem;
+                    }
+                  
+                    svg path {
+                      transition: 400ms;
+                    }
+                  
+                    &:hover {
+                      background-color: transparent;
+                  
+                      .text {
+                        color: #181717;
+                      }
+                  
+                      svg path {
+                        fill: #181717;
+                      }
+                    }
+                  }
+            }
+                div{
+                    .bin-button {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 13%;
+                        height: 42px;
+                        border-radius: 15px;
+                        background-color: rgb(255, 95, 95);
+                        cursor: pointer;
+                        border: 3px solid rgb(255, 201, 201);
+                        transition-duration: 0.3s;
+                        margin-inline-start: auto;
+                        margin-top: -2.3rem;
+                        &:hover .bin-top {
+                          transform: rotate(45deg);
+                        }
+                      
+                        &:hover {
+                          background-color: rgb(255, 0, 0);
+                        }
+                      
+                        &:active {
+                          transform: scale(0.9);
+                        }
+                      
+                        .bin-bottom {
+                          width: 15px;
+                        }
+                      
+                        .bin-top {
+                          width: 17px;
+                          transform-origin: right;
+                          transition-duration: 0.3s;
+                        }
+                      }
+                      
+                }
+            .padrePro{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                column-gap: 3rem;
+                .estiloPro{
+                    display: flex;
+                    flex-flow: column wrap;
+                    width: max-content;
+                    margin-top: 1rem;
+                    background-color: #463f3a;
+                    margin-left: 1rem;
+                    .imgPro{
+                        width: 21rem;
+                        height: 21rem;
+                        border-radius: 11rem;
+                        
+                    }
+                    .detalles{
+                        background-color: #463f3a;
+                        text-align: center;
+                        border-radius: 2rem;
+                        .nombreProductos{
+                            text-align: center;
+                        }
+                    }
+                    div{
+                        .CartBtn {
+                            width: 140px;
+                            height: 40px;
+                            border-radius: 12px;
+                            border: none;
+                            background-color: gray;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            transition-duration: 0.5s;
+                            overflow: hidden;
+                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+                            position: relative;
+                          
+                            .IconContainer {
+                              position: absolute;
+                              left: -50px;
+                              width: 30px;
+                              height: 30px;
+                              background-color: transparent;
+                              border-radius: 50%;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              overflow: hidden;
+                              z-index: 2;
+                              transition-duration: 0.5s;
+                          
+                              .icon {
+                                border-radius: 1px;
+                              }
+                            }
+                          
+                            .text {
+                              height: 100%;
+                              width: fit-content;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              color: rgb(17, 17, 17);
+                              z-index: 1;
+                              transition-duration: 0.5s;
+                              font-size: 1em;
+                              font-weight: 600;
+                              margin-top: 1rem;
+                            }
+                          
+                            &:hover .IconContainer {
+                              transform: translateX(58px);
+                              border-radius: 40px;
+                              transition-duration: 0.5s;
+                            }
+                          
+                            &:hover .text {
+                              transform: translate(10px, 0px);
+                              transition-duration: 0.5s;
+                            }
+                          
+                            &:active {
+                              transform: scale(0.95);
+                              transition-duration: 0.5s;
+                            }
+                          }
+                          
+                    }
+                }
+                div{
+                    .btn {
+                        border: none; 
+                        color: white; 
+                        padding: 14px 28px; 
+                        cursor: pointer; 
+                        border-radius: 5px; 
+                        display: inline-block;
+                        margin: 5px;
+                      }
+                      
+                      .primary {
+                        background-image: linear-gradient(to right, #0b7dda, #4ab2e2);
+                      
+                        &:hover {
+                          background-image: linear-gradient(to right, #0b7dda, #4ab2e2);
+                        }
+                      }
+                }
+            }
+
+            .miniTitulo{
+                text-align: center;
+            }
+            .infoParrafo{
+                text-align: center;
+            }
+           .cards{
+                display: block;
+                width: 30%;
+                padding: 2rem;
+                background-color: grey;
+                margin-top: 15rem;
+                margin-right: 1rem;
+                margin-left: 1rem;
+                border: solid 0.5rem;
+                border-radius: 1rem;
+           }
+        }
+        .sectionVinos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            align-content: center;
+            justify-content: center;
+            .divVino{
+                height: max-content;
+                .vinos{
+                    display: block;
+                    margin-top: 7rem;
+                    margin-left: 1rem;
+                    width: 25rem;
+                    height: max-content;
+                    border: solid 0.5rem;
+                    border-radius: 5rem;
+                }
+                .vinosEvento{
+                    filter: blur(4px);
+                    -webkit-filter: blur(4px);
+                    -moz-filter: blur(4px);
+                    box-shadow: 2px 0px 46px 0px rgba(128,128,128,0.75);
+                    -webkit-box-shadow: 2px 0px 46px 0px rgba(128,128,128,0.75);
+                    -moz-box-shadow: 2px 0px 46px 0px rgba(128,128,128,0.75);
+                }
+            }
+            .divEnlace{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                .enlaceProductos{
+                    width: 90%;
+                    height: 40rem;
+                    margin-left: 2rem;
+                    border-radius: 3rem;
+                    border: solid 0.4rem;
+                    margin-bottom: 1rem;
+                    filter: blur(4px);
+                    -webkit-filter: blur(4px);
+                    -moz-filter: blur(4px);
+                    box-shadow: 2px 0px 46px 0px rgba(128,128,128,0.75);
+                    -webkit-box-shadow: 2px 0px 46px 0px rgba(128,128,128,0.75);
+                    -moz-box-shadow: 2px 0px 46px 0px rgba(128,128,128,0.75);
+                }
+                .clickProductos{
+                    position: absolute;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 6rem;
+                    text-shadow: 4px 0px 10px rgba(0,0,0,0.55);
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+            }        
+       }
+       .contacto{
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px;
+        grid-template-areas: 
+        "titulo titulo"
+        "formu imagen";
+        .divDeLaFoto{
+            filter: drop-shadow(0px 0px 42px #463f3a);
+            -webkit-filter: drop-shadow(0px 0px 42px #463f3a);
+            -moz-filter: drop-shadow(0px 0px 42px #463f3a);
+            grid-area: imagen;
+            margin-right: 1rem;
+            overflow: hidden;
+            width: 36rem;
+            height: 42rem;
+            border-radius: 9rem;
+            margin-bottom: 5rem;
+            border: solid 0.2rem  #463f3a;
+            .fotoFormulario{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .titulo{
+            grid-area: titulo;
+        }
+        .form{
+            grid-area: formu;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 450px;
+            background-color: #463f3a;
+            padding: 40px;
+            border-radius: 10px;
+            position: relative;
+          
+            label {
+              position: relative;
+          
+              .input {
+                width: 100%;
+                padding: 10px 10px 20px 10px;
+                outline: 0;
+                border: 1px solid rgba(105, 105, 105, 0.397);
+                border-radius: 5px;
+          
+                &:placeholder-shown + span {
+                  top: 15px;
+                  font-size: 0.9em;
+                }
+          
+                &:focus + span,
+                &:valid + span {
+                  top: 30px;
+                  font-size: 0.7em;
+                  font-weight: 600;
+                }
+          
+                &:valid + span {
+                  color: green;
+                }
+              }
+          
+              .input + span {
+                position: absolute;
+                left: 10px;
+                top: 15px;
+                color: grey;
+                font-size: 0.9em;
+                cursor: text;
+                transition: 0.3s ease;
+              }
+          
+              .input01 {
+                width: 100%;
+                padding: 10px 10px 20px 10px;
+                outline: 0;
+                border: 1px solid rgba(105, 105, 105, 0.397);
+                border-radius: 5px;
+          
+                &:placeholder-shown + span {
+                  top: 40px;
+                  font-size: 0.9em;
+                }
+          
+                &:focus + span,
+                &:valid + span {
+                  top: 50px;
+                  font-size: 0.7em;
+                  font-weight: 600;
+                }
+          
+                &:valid + span {
+                  color: green;
+                }
+              }
+          
+              .input01 + span {
+                position: absolute;
+                left: 10px;
+                top: 50px;
+                color: grey;
+                font-size: 0.9em;
+                cursor: text;
+                transition: 0.3s ease;
+              }
+            }
+          }
+          
+          .message {
+            color: rgba(88, 87, 87, 0.822);
+            font-size: 14px;
+          }
+          
+          .flex {
+            display: flex;
+            width: 100%;
+            gap: 6px;
+          }
+          
+          .fancy {
+            background-color: transparent;
+            border: 2px solid #cacaca;
+            border-radius: 0px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 390;
+            letter-spacing: 2px;
+            margin: 0;
+            outline: none;
+            overflow: visible;
+            padding: 8px 30px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            text-transform: none;
+            transition: all 0.3s ease-in-out;
+            user-select: none;
+            font-size: 13px;
+          
+            &::before {
+              content: " ";
+              width: 1.7rem;
+              height: 2px;
+              background: #cacaca;
+              top: 50%;
+              left: 1.5em;
+              position: absolute;
+              transform: translateY(-50%) translateX(230%);
+              transform-origin: center;
+              transition: background 0.3s linear, width 0.3s linear;
+            }
+          
+            .text {
+              font-size: 1.125em;
+              line-height: 1.33333em;
+              padding-left: 2em;
+              display: block;
+              text-align: left;
+              transition: all 0.3s ease-in-out;
+              text-transform: lowercase;
+              text-decoration: none;
+              color: #818181;
+              transform: translateX(30%);
+            }
+          
+            .top-key {
+              height: 2px;
+              width: 1.5625rem;
+              top: -2px;
+              left: 0.625rem;
+              position: absolute;
+              background: white;
+              transition: width 0.5s ease-out, left 0.3s ease-out;
+            }
+          
+            .bottom-key-1 {
+              height: 2px;
+              width: 1.5625rem;
+              right: 1.875rem;
+              bottom: -2px;
+              position: absolute;
+              background: white;
+              transition: width 0.5s ease-out, right 0.3s ease-out;
+            }
+          
+            .bottom-key-2 {
+              height: 2px;
+              width: 0.625rem;
+              right: 0.625rem;
+              bottom: -2px;
+              position: absolute;
+              background: white;
+              transition: width 0.5s ease-out, right 0.3s ease-out;
+            }
+          
+            &:hover {
+              color: white;
+              background: #cacaca;
+          
+              &::before {
+                width: 1.5rem;
+                background: white;
+              }
+          
+              .text {
+                color: white;
+                padding-left: 1.5em;
+              }
+          
+              .top-key {
+                left: -2px;
+                width: 0px;
+              }
+          
+              .bottom-key-1,
+              .bottom-key-2 {
+                right: 0;
+                width: 0;
+              }
+            }
+          }
+          
+       }
+    }
+}

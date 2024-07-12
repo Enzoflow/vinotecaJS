@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "nombre":"Gancia",
+        "precio": 2500,
+        "des": "Gancia",
+        "foto": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3070148_f.jpg"
+    },
+    {
+        "id":2,
+        "nombre":"Fernet",
+        "precio": 5000,
+        "des": "Fernet",
+        "foto": "https://acdn.mitiendanube.com/stores/835/701/products/fernet-branca-aperitivo-1000-ml1-f361be27b92a8c5e0b16661028118789-640-0.jpg"
+    },
+    {
+        "id":3,
+        "nombre":"Vodka",
+        "precio": 2000,
+        "des": "Vodka",
+        "foto": "https://www.alambique22.ar/241-large_default/vodka-skyy-750cc.jpg"
+    },
+    {
+        "id":4,
+        "nombre":"Campari",
+        "precio": 4000,
+        "des": "Campari",
+        "foto": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3070081_f.jpg"
+    },
+    {
+        "id":5,
+        "nombre":"Whisky",
+        "precio": 8000,
+        "des": "Wisky",
+        "foto": "https://www.espaciovino.com.ar/media/default/0001/69/thumb_68208_default_big.jpeg"
+    },
+    {
+       "id":6,
+        "nombre":"Vino Toro",
+        "precio": 4500,
+        "des": "Vino Toro",
+        "foto": "https://www.vinosdeayerbe.com.ar/wp-content/uploads/2024/05/Paradigma02-jpeg.webp" 
+    },
+    {
+        "id":7,
+        "nombre":"Smirnoff",
+        "precio": 4500,
+        "des": "Smirnoff",
+        "foto": "https://borrachines.com.ar/wp-content/uploads/2023/03/Smirnoff-Raspberry-750ml-Mercado-Libre.png" 
+    },
+    {
+        "id":8,
+        "nombre": "Cerveza corona (pack X6)",
+        "precio": 8500,
+        "des": "Cerveza corona pack de 6",
+        "foto":"https://acdn.mitiendanube.com/stores/001/551/869/products/3012-pack-corona-330ml-x61-9a31b80d7cbd6b7c0c16515480619502-640-0.jpeg"
+    }
+
+]
