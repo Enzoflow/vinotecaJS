@@ -96,7 +96,7 @@ divCarrito.style.border="solid";
 divCarrito.style.width="50%";
 divCarrito.style.marginLeft="25rem";
 const AgregarAlCarritoPorLocal=async(indicador, cantidadProductos, dinero, parrafo)=>{
-    const res = await fetch('/productos.json');
+    const res = await fetch('./productos.json');
     const info = await res.json();
     const datos = await info;
     const aver=datos.find(({ id }) => id === indicador);
@@ -237,7 +237,7 @@ section2.appendChild(divCarrito);
 divCarrito.style.marginTop="1rem";
 divCarrito.appendChild(h2);
 const AgregarAlcarrito2 = async (v, can, parrafo)=>{
-    const res = await fetch('/productos.json');
+    const res = await fetch('./productos.json');
     const info = await res.json();
     const datos = await info;
     const aver=datos.find(({ id }) => id === v);
@@ -454,7 +454,7 @@ comprobarCarrito()
 //********************************** */
 //LISTA DE PRODUCTOS///////////////
 const generarProductos = async ()=>{
-    const res = await fetch('/productos.json');
+    const res = await fetch('./productos.json');
     const info = await res.json();
     const datos = await info;
     for(indice of datos){
